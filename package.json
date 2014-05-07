@@ -2,6 +2,7 @@
   "name": "salmondesign",
   "version": "0.0.1",
   "description": "Website for Rachel Salmon - Graphic Designer",
+  "repository": "https://github.com/davidblurton/salmondesign.git",
   "main": "server.js",
   "dependencies": {
     "ghost": "~0.4.2"
