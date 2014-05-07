@@ -1,0 +1,15 @@
+{{!< default}}
+
+{{> header}}	
+
+<section class="photos">
+    {{#post}}
+    <article class="{{post_class}} photo-full">
+        <section class="photo-full-caption">
+            {{content}}
+        </section>
+    </article>    
+    {{/post}}
+</section>
+
+{{> footer}}

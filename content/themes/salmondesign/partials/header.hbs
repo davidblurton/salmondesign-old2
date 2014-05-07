@@ -1,0 +1,13 @@
+<header class="header">
+	{{#if @blog.logo}}
+	<div class="blog-logo">
+        <a href="{{@blog.url}}">
+		  <div class="blog-logo-inner" style="background-image: url({{@blog.logo}});"></div> 
+        </a>
+	</div>
+	{{/if}}
+    
+    <span class="blog-title hide-for-small">Salmon Design</span>
+
+	{{> static-pages}}
+</header>

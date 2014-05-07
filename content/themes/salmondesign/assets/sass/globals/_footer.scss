@@ -1,0 +1,44 @@
+/* Footer
+---------------------------------------- */
+
+.footer {
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 370px;
+    color: #8c8c8c;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: Georgia;
+    line-height: 18px;
+}
+.footer A {
+    color: #8c8c8c;
+    text-decoration: underline;
+}
+.footer A:hover {
+    color: #b3b3b3;
+}
+.copyright {
+    padding-top: 10px;
+}
+.rss {} .rss-line {
+    display: inline-block;
+    width: 370px;
+    height: 2px;
+    background: #dedede;
+}
+.rss-icon {
+    margin-top: -14px;
+}
+.rss-icon-inner {
+    display: inline-block;
+    background-color: #f4f4f4;
+}
+.rss-icon-inner > .icon {
+    height: auto;
+    background: none;
+    color: #888;
+    line-height: 1;
+}

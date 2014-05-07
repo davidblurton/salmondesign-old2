@@ -1,0 +1,14 @@
+{
+  "name": "salmondesign",
+  "version": "0.0.1",
+  "description": "Website for Rachel Salmon - Graphic Designer",
+  "main": "server.js",
+  "dependencies": {
+    "ghost": "~0.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "David Blurton"
+}
