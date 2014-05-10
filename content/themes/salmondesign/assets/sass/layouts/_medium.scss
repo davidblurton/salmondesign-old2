@@ -1,6 +1,6 @@
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 14 * $column-with-gutter) {
   .container {
-    @include width(10);
+    @include width(12);
   }
   
   .container:after {
@@ -11,7 +11,7 @@
   
   .intro {
     position: relative;
-    padding-right: $cols5;
+    padding-right: $cols4 + 1em;
     height: 420px;
   }
   
@@ -25,7 +25,12 @@
   .example {
     float: left;
     @include width(4);
-    padding-right: $cols1;
+    margin-right: $gutter;
+    margin-bottom: $gutter;
+  }
+  
+  .example:nth-of-type(3n) {
+    margin-right: 0;
   }
   
   .example-details {

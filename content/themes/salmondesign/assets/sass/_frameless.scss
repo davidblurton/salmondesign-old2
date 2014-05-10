@@ -13,6 +13,7 @@ $em: $font-size / 1em;	// Shorthand for outputting ems
 
 $column: 48px;	// The column-width of your grid in pixels
 $gutter: 16px;	// The gutter-width of your grid in pixels
+$column-with-gutter: $column + $gutter;
 
 //
 // Column-widths in variables, in ems
