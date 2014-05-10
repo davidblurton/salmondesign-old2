@@ -3,7 +3,7 @@
 
 .photo-thumbnail {
     @include width(4);
-    background-size: contain;
+    background-size: cover;
     background-repeat:no-repeat;
 }
 .photo-content-temp {

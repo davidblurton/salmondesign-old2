@@ -1,11 +1,18 @@
 @media screen and (min-width: 720px) {
   .container {
-    @include width(9);
+    @include width(10);
+  }
+  
+  .container:after {
+    content:'';
+    display:block;
+    clear: both;
   }
   
   .intro {
     position: relative;
     padding-right: $cols5;
+    height: 420px;
   }
   
   .intro img {
@@ -13,5 +20,20 @@
     right: 0;
     bottom: 0;
     @include width(4);
+  }
+  
+  .example {
+    float: left;
+    @include width(4);
+    padding-right: $cols1;
+  }
+  
+  .example-details {
+    display: none;
+  }
+  
+  .photo-thumbnail {
+    height: $cols4 !important;
+    width: $cols4;
   }
 }

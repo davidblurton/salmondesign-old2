@@ -4,16 +4,20 @@
 }
 
 a {
-  color: #008ACE;
+  color: $link;
   text-decoration: none;
 }
 
-a:hover {
-  color: #00ABFF;
+a:hover:not(.blog-logo) {
+  border-bottom: 1px solid $link;
 }
 
 img {
   max-width: 100%; 
+}
+
+.intro {
+  margin-bottom: 30px;
 }
 
 .example {
@@ -25,6 +29,11 @@ a .post-title {
   margin-top: 15px;
 }
 
-.intro {
-  margin-top: 50px;
+.banner {
+  background-color: $green;
+  color: #fff;
+  padding: 10px;
+  @include width(2);
+  margin-left: -999px;
+  padding-left: 999px;
 }

@@ -3,13 +3,15 @@
 {{> header}}
 <div class="container">
   <section class="intro">  
-    <h1 id="hello">Hello</h1>
+    <h1 id="hello">Hello!</h1>
     <p>I’m Rachel, a Graphic Designer based in Cambridge, UK. I’m passionate about great design and hold a commitment to clean and clear visual communication across digital and print. </p>
     <p>Among these pages you’ll find a selection of work, so please enjoy exploring.</p>
     <p>So far, I’ve worked with some excellent people and I’d love to add you to the list. <a href="mailto:rachel@salmondesign.co">Get in touch</a>.
     </p>  
     <img src="assets/img/portrait.jpg" width="300" />  
   </section>
+  
+  <h2 class="banner">Recent work</h2>
 
   {{#foreach posts}}
   <article class="example">
@@ -27,16 +29,16 @@
         </div>
       </div>
     </a>
-
-    <a href="{{url}}">
-      <h2 class="post-title">{{title}}</h2>
-    </a>
-    {{#if tags}}
-    <span class="tags">
-      {{tags}}
-    </span>
-    {{/if}}
-
+    <div class="example-details">
+      <a href="{{url}}">
+        <h2 class="post-title">{{title}}</h2>
+      </a>
+      {{#if tags}}
+      <span class="tags">
+        {{tags}}
+      </span>
+      {{/if}}
+    </div>
   </article>
   {{/foreach}}		
 
