@@ -10,7 +10,7 @@ var path = require('path');
 var tinylr = require('tiny-lr');
 var WritableStream = require('stream').Writable;
 
-var outputDir = 'content/themes/salmondesign/assets';
+var outputDir = 'content/themes/salmondesign/assets/dist';
 var watching = false;
 
 // Paths
@@ -41,15 +41,13 @@ var liveReloadifWatching = function () {
 gulp.task('sass', function () {
   gulp.src(paths.sass)
     .pipe(plumber())
-    .pipe(sass({
-      sourceComments: 'map'
-    }))
+    .pipe(sass())
     .pipe(prefix(
       "last 1 version", "> 1%", "ie 8", "ie 7"
     ))
-    .pipe(gulp.dest(outputDir + '/dist/css'))
+    .pipe(gulp.dest(outputDir + '/css'))
     .pipe(minifycss())
-    .pipe(gulp.dest(outputDir + '/dist/css'))
+    .pipe(gulp.dest(outputDir + '/css'))
     .pipe(liveReloadifWatching());
 });
 
@@ -60,7 +58,7 @@ gulp.task('uglify', function () {
     .pipe(uglify({
       outSourceMap: false
     }))
-    .pipe(gulp.dest('content/themes/salmondesign/assets/dist/js/'))
+    .pipe(gulp.dest(outputDir + '/js'))
     .pipe(liveReloadifWatching());
 });
 
