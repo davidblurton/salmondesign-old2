@@ -33,7 +33,7 @@ a .post-title {
   background-color: $green;
   color: #fff;
   padding: 10px;
-  @include width(2);
+  @include width(3);
   margin-left: -999px;
   padding-left: 999px;
 }
