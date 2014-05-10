@@ -20,13 +20,17 @@ img {
   margin-bottom: 2em;
 }
 
+.examples {
+  margin-top: 2em;
+}
+
 .example {
   margin-bottom: 2em;
 }
 
 a .post-title {
   color: $text;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .banner {
@@ -36,5 +40,5 @@ a .post-title {
   @include width(3);
   margin-left: -999px;
   padding-left: 999px;
-  margin-bottom: 2em;
+  margin-top: 1em;
 }

@@ -12,36 +12,36 @@
   </section>
   
   <h2 class="banner">Recent work</h2>
-
-  {{#foreach posts}}
-  <article class="example">
-    <a href="{{url}}">
-      <div class="photo-thumbnail">
-        <div class="photo-content-temp">{{content}}</div>
-        <div class="photo-thumbnail-loading-progress">
-            <div class="spinner">
-                <div class="rect1"></div>
-                <div class="rect2"></div>
-                <div class="rect3"></div>
-                <div class="rect4"></div>
-                <div class="rect5"></div>
-            </div>
-        </div>
-      </div>
-    </a>
-    <div class="example-details">
+  <section class="examples">
+    {{#foreach posts}}
+    <article class="example">
       <a href="{{url}}">
-        <h2 class="post-title">{{title}}</h2>
+        <div class="photo-thumbnail">
+          <div class="photo-content-temp">{{content}}</div>
+          <div class="photo-thumbnail-loading-progress">
+              <div class="spinner">
+                  <div class="rect1"></div>
+                  <div class="rect2"></div>
+                  <div class="rect3"></div>
+                  <div class="rect4"></div>
+                  <div class="rect5"></div>
+              </div>
+          </div>
+        </div>
       </a>
-      {{#if tags}}
-      <span class="tags">
-        {{tags}}
-      </span>
-      {{/if}}
-    </div>
-  </article>
-  {{/foreach}}		
-
+      <div class="example-details">
+        <a href="{{url}}">
+          <h2 class="post-title">{{title}}</h2>
+        </a>
+        {{#if tags}}
+        <span class="tags">
+          {{tags}}
+        </span>
+        {{/if}}
+      </div>
+    </article>
+    {{/foreach}}		
+  </section>
   {{#if pagination}}
     {{pagination}}
   {{/if}}
