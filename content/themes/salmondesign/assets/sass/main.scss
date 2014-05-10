@@ -14,10 +14,10 @@
   "foundation/components/global",
   "foundation/components/grid",
   "foundation/components/visibility",
-  "foundation/components/block-grid",
-  "foundation/components/type",
-  "foundation/components/buttons",
-  "foundation/components/forms";
+//  "foundation/components/block-grid",
+  "foundation/components/type";
+//  "foundation/components/buttons",
+//  "foundation/components/forms",
 //  "foundation/components/button-groups",
 //  "foundation/components/dropdown-buttons",
 //  "foundation/components/split-buttons",
@@ -51,10 +51,3 @@
   "globals/header",
   "globals/footer",
   "globals/posts";
-
-// Foundicons - using General Enclosed and Social
-  @import
-    "icons/general_enclosed_foundicons",
-    "icons/general_enclosed_foundicons_ie7",
-    "icons/social_foundicons",
-    "icons/social_foundicons_ie7";

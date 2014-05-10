@@ -5,7 +5,16 @@
   "repository": "https://github.com/davidblurton/salmondesign.git",
   "main": "server.js",
   "dependencies": {
-    "ghost": "~0.4.2"
+    "ghost": "~0.4.2",
+    "gulp": "~3.6.2",
+    "gulp-sass": "~0.7.1",
+    "gulp-plumber": "~0.6.1",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-minify-css": "~0.3.4",
+    "gulp-uglify": "~0.3.0",
+    "gulp-livereload": "~1.5.0",
+    "gulp-nodemon": "~1.0.2",
+    "tiny-lr": "0.0.7"
   },
   "devDependencies": {},
   "scripts": {

@@ -38,12 +38,4 @@ $(document).ready(function () {
             });
         };
     });
-
-    $('.fotorama').fotorama({
-        nav: 'thumbs',
-        allowfullscreen: true,
-        keyboard: true
-    });
-
-    $('a[rel=darkbox]').darkbox();
 });
