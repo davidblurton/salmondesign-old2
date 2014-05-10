@@ -1,0 +1,37 @@
+/* Header
+---------------------------------------- */
+
+.header {
+  height: 100px;
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #eee;
+  
+  .blog-logo {
+    float: left;
+    margin-top: 15px;
+  }
+  
+  .static-pages {
+    float: right;
+    margin-top: 40px;
+    line-height: 22px;
+  }
+  
+  .static-pages A {
+    margin: 0 5px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .static-pages A:hover {
+    border-bottom: 2px solid #333333;
+    color: #333333;
+    margin-bottom: 0;
+  }
+  
+  .static-pages .separator {
+    color: #ccc;
+    font-weight: bold;
+  }
+}

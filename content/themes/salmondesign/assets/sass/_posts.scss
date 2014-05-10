@@ -1,53 +1,8 @@
-/* Global
----------------------------------------- */
-
-PRE {
-    padding: 15px 20px;
-    border: 1px solid #f1f1f1;
-    background: #f8f8f8;
-    color: #333333;
-    font-size: 13px;
-    font-family: Consolas, monospace;
-}
-A {
-    color: #008ACE;
-    text-decoration: none;
-}
-A:hover {
-    color: #00ABFF;
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -ms-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-}
-
-/* Photos
----------------------------------------- */
-
-.photos {
-    overflow: hidden;
-    margin-top: 100px;
-    color: #555555;
-}
-
-.photos article:nth-of-type(even) {
-    background-color: $post-stripe;
-}
-
-article.post {
-    padding: 50px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.post-title {
-    color: #333;
-}
 /* Photo thumbnail
     ---------------------------------------- */
 
 .photo-thumbnail {
-    width: 100%;
+    @include width(4);
     background-size: contain;
     background-repeat:no-repeat;
 }
@@ -96,7 +51,6 @@ article.post {
 .photo-full {
     margin: 0 auto;
     padding-top: 25px;
-    max-width: 960px;
 }
 .photo-full-header H2 {
     margin: 0;
@@ -175,60 +129,6 @@ article.post {
 .photo-full-info-inner {
     margin: 0 auto;
     width: 70%;
-}
-
-/* Share buttons
-            ---------------------------------------- */
-
-.share-buttons {
-    float: right;
-    color: #777777;
-    letter-spacing: 2px;
-    font-size: 12px;
-    font-family: Tahoma, sans-serif;
-}
-.share-buttons .icon {
-    width: 24px;
-    height: 24px;
-    border-radius: 2px;
-    background: #555555;
-    color: #ffffff;
-    text-align: center;
-    line-height: 24px;
-}
-.share-buttons .icon:hover {
-    background: #777777;
-    color: #ffffff;
-}
-/* Pagination
-    ---------------------------------------- */
-
-.pagination {
-    overflow: hidden;
-    margin: 20px 0;
-}
-.pagination .older-posts,
-.newer-posts {
-    padding: 4px 8px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    background-color: #e0e0e0;
-    color: #888888;
-    font-family: 'Roboto Slab', sans-serif;
-}
-.pagination .older-posts {
-    float: right;
-    margin-right: 1%;
-}
-.pagination .newer-posts {
-    float: left;
-    margin-left: 1%;
-}
-.pagination .older-posts:hover,
-.newer-posts:hover {
-    background-color: #dbdbdb;
-    color: #888888;
 }
 
 /* Social icons

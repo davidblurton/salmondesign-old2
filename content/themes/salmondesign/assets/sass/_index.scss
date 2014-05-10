@@ -1,0 +1,30 @@
+.container {
+  @include width(4);
+  margin: 0 auto;
+}
+
+a {
+  color: #008ACE;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00ABFF;
+}
+
+img {
+  max-width: 100%; 
+}
+
+.example {
+  padding: 30px 0;
+}
+
+a .post-title {
+  color: $text;
+  margin-top: 15px;
+}
+
+.intro {
+  margin-top: 50px;
+}

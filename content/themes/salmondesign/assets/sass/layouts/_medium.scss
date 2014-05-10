@@ -1,0 +1,17 @@
+@media screen and (min-width: 720px) {
+  .container {
+    @include width(9);
+  }
+  
+  .intro {
+    position: relative;
+    padding-right: $cols5;
+  }
+  
+  .intro img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include width(4);
+  }
+}

@@ -16,7 +16,7 @@ var watching = false;
 // Paths
 var paths = {
   scripts: 'content/themes/salmondesign/assets/js/*.js',
-  sass: 'content/themes/salmondesign/assets/sass/*.scss',
+  sass: 'content/themes/salmondesign/assets/sass/**/*.scss',
 };
 
 var devnull = function () {

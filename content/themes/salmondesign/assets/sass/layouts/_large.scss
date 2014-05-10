@@ -1,0 +1,9 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    @include width(14);
+  }
+  
+  .intro {
+    min-height: 370px;
+  }
+}
