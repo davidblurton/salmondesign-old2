@@ -7,13 +7,37 @@
   border-bottom: 1px solid #eee;
   margin-bottom: 50px;
   
+  .container {
+    position: relative;
+  }
+  
   .blog-logo {
-    float: left;
-    margin-top: 15px;
+    position: absolute;
+    left: 0;
+    top: 15px;
+  }
+  
+  .name, .title {
+    position: absolute;
+    left: 86px;
+    width: 200px;
+    display: none;
+  }
+  
+  .name {
+    top: 10px;
+    color: $text;
+    font-size: 1.6em;
+  }
+  
+  .title {
+    top: 38px;
+    color: $green;
   }
   
   .static-pages {
-    float: right;
+    position: absolute;
+    right: 0;
     margin-top: 40px;
     line-height: 22px;
   }

@@ -9,6 +9,10 @@
     clear: both;
   }
   
+  .header .name, .header .title {
+    display:inline;
+  }
+  
   .intro {
     position: relative;
     padding-right: $cols4 + 1em;
@@ -18,7 +22,7 @@
   .intro img {
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     @include width(4);
   }
   
