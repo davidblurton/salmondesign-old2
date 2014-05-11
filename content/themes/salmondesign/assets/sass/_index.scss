@@ -17,7 +17,11 @@ img {
 }
 
 .intro {
-  margin: 2em 0;
+  margin-bottom: 4em;
+}
+
+.intro p:first-of-type {
+  margin-top: 2em;
 }
 
 .examples {
@@ -26,6 +30,10 @@ img {
 
 .example {
   margin-bottom: 2em;
+}
+
+.example-details {
+  display: none;
 }
 
 a .post-title {
