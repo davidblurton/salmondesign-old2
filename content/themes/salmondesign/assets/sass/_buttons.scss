@@ -1,0 +1,21 @@
+.button {
+  display: inline-block;
+  border: 3px solid $green;
+  text-decoration: none;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.button-light {
+  background-color: $white;
+}
+
+.button:hover {
+  color: darken($green, 20%);
+  border: 3px solid darken($green, 20%);
+}
+
+.button:active {
+  background-color: $green;
+  color: $white;
+}

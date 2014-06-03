@@ -1,3 +1,7 @@
+body {
+  background-color: $white;
+}
+
 .container {
   @include width(4);
   margin: 0 auto;
@@ -8,7 +12,7 @@ a {
   text-decoration: none;
 }
 
-a:hover:not(.blog-logo) {
+a:hover:not(.blog-logo .button) {
   border-bottom: 1px solid $link;
 }
 
@@ -25,7 +29,11 @@ img {
 }
 
 .examples {
-  margin-top: 2em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background-color: white;
+  
+  overflow:auto;
 }
 
 .example {
@@ -50,4 +58,37 @@ a .post-title {
   margin-top: 1em;
   display: inline;
   padding-right: 1em;
+}
+
+.hero {
+  background-color: $green;
+  color: #fff;
+  padding: 3em;
+  
+  h1 {
+    font-weight: 500;
+    line-height: 1em;
+    margin-bottom: 0;
+  }
+  
+  h2 {
+    font-weight: 200;
+    font-size: 1.77em;
+    opacity: 0.7;
+  }
+}
+
+.testimonial {
+  background-color: $salmon;
+  color: #fff;
+  padding: 3em;
+  
+  blockquote {
+    margin: 0;
+
+    .client {
+      line-height: 1.3em;
+      opacity: 0.8;
+    }
+  }
 }
