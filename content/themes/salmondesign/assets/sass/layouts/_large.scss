@@ -1,0 +1,17 @@
+@media screen and (min-width: 18 * $column-with-gutter) {
+  .container {
+    @include width(16);
+  }
+  
+  .intro {
+    margin-left: $cols4 + 1em;
+  }
+  
+  .example:nth-of-type(3n) {
+    margin-right: $gutter;
+  }
+  
+  .example:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}

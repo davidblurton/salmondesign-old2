@@ -1,0 +1,44 @@
+@media screen and (min-width: 14 * $column-with-gutter) {
+  .container {
+    @include width(12);
+  }
+  
+  .container:after {
+    content:'';
+    display:block;
+    clear: both;
+  }
+  
+  .intro {
+    position: relative;
+    padding-right: $cols4 + 1em;
+    height: 370px;
+  }
+  
+  .intro img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include width(4);
+  }
+  
+  .example {
+    float: left;
+    @include width(4);
+    margin-right: $gutter;
+    margin-bottom: $gutter;
+  }
+  
+  .example:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  
+  .example-details {
+    display: none;
+  }
+  
+  .photo-thumbnail {
+    height: $cols4 !important;
+    width: $cols4;
+  }
+}

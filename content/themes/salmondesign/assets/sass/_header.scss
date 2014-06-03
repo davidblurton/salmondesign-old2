@@ -1,0 +1,38 @@
+/* Header
+---------------------------------------- */
+
+.header {
+  height: 100px;
+  margin-bottom: 1em;
+  
+  
+  .container {
+    height: 100%;
+    position: relative;
+  }
+  
+  .blog-logo {
+    position: absolute;
+    top: 20px;
+  }
+  
+  .static-pages {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    line-height: 22px;
+  }
+  
+  .static-pages A {
+    margin: 0 5px;
+    color: $light-text;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  
+  .static-pages A:hover {
+    border-bottom: 2px solid darken($light-text, 20%);
+    color: darken($light-text, 20%);
+    margin-bottom: 0;
+  }
+}

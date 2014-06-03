@@ -1,27 +1,27 @@
 {{!< default}}
 
 {{> header}}	
+<div class="container">
+  <section class="photos">
+      {{#post}}
 
-<section class="photos">
-    {{#post}}
+      <article class="{{post_class}} photo-full">
+          <header class="photo-full-header">
+              <h2>{{title}}</h2>
+              {{#if tags}}
+              <section class="tags">
+                  {{tags}}
+              </section>
+              {{/if}}
+          </header>
 
-    <article class="{{post_class}} photo-full">
-        <header class="photo-full-header">
-            <h2>
-                <a href="{{url}}">{{{title}}}</a>
-            </h2>
-            {{#if tags}}
-            <section class="tags">
-                {{tags}}
-            </section>
-            {{/if}}
-        </header>
+          <section class="photo-full-caption">
+              {{content}}
+          </section>       
+      </article>    
+      {{/post}}
+  </section>
+</div>
 
-        <section class="photo-full-caption">
-            {{content}}
-        </section>       
-    </article>    
-    {{/post}}
-</section>
 
 {{> footer }}
